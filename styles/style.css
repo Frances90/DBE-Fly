@@ -1,8 +1,10 @@
+@import url('colors.css');
+
 *{
     margin: 0px;
     padding: 0px;
 }
-
+/* Header und Navigation */
 header{
     display: flex;
     flex-direction: row;
@@ -26,4 +28,80 @@ nav #nav_items{
     font-size: 18px;
     font-weight: 600;
     list-style-type: none;
+}
+
+/* Main css fängt hier an */
+main{
+    width: 100%;
+}
+
+/* Background img setzen */
+#background{
+    background-image: url('../resources/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+/* Unternavigation */
+#subnav{
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
+    margin: 0 auto; 
+    z-index: 1;
+}
+
+#subnav_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.subnav_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color:aqua;
+    width: 100%;
+}
+
+.button_design{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: var(--text_white);
+    background-color: var(--tabs_background);
+    font-size: 16px;
+    border: none;
+
+}
+
+.svg_design{
+    width: 20px;
+    height: auto;
+    fill: var(--text_white);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button_design:focus{
+    color: var(--aktiv);
+    background-color: var(--tabs_background_aktiv);
+}
+
+.button_design:focus .svg_design{
+    fill: var(--aktiv);
 }

@@ -13,7 +13,12 @@ header{
     width: 100%;
     height: 100px;
     gap: 200px;
+    background-color: var(--background_white);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
 }
 
 nav #nav_items{
@@ -40,7 +45,12 @@ main{
     background-image: url('../resources/background.jpg');
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 
 /* Unternavigation */
@@ -53,6 +63,7 @@ main{
     justify-content: space-around;
     align-items: center;   
     margin: 0 auto; 
+    position: relative;
     z-index: 1;
 }
 
@@ -63,6 +74,7 @@ main{
     align-items: center;
     gap: 10px;
     width: 100%;
+    position: static;
 }
 
 .subnav_item{
@@ -80,6 +92,7 @@ main{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 10px;
     width: 100%;
     height: 50px;
     color: var(--text_white);
@@ -98,10 +111,258 @@ main{
 }
 
 .button_design:focus{
-    color: var(--aktiv);
+    color: var(--background_tuerkis);
     background-color: var(--tabs_background_aktiv);
+    font-weight: 600;
 }
 
 .button_design:focus .svg_design{
-    fill: var(--aktiv);
+    fill: var(--background_tuerkis);
 }
+
+.button_design_flug{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: var(--text_white);
+    background-color: var(--tabs_background);
+    font-size: 16px;
+    border: none;
+}
+
+#container_buchungsarten{
+    width: 100%;
+    min-height: 300px; /* oder was dein größtes Formular braucht */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.icon_size{
+    width: 15px;
+}
+
+#zusatz_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    color: var(--text_grey);
+    font-size: 14px;
+}
+
+#flug_route, #flug_anzahl, #flug_nonstop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Formular für Flüge */
+#form_fluege{
+    background-color: var(--background_white);
+    width: 80%;
+    height: auto;
+}
+
+#design_form_fluege{
+    background-color: var(--background_white);
+    width: 100%;
+    height: auto;
+}
+
+#form_ort_datum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+    gap: 20px;
+
+ }
+
+.input_container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 20%;
+    border: 1px solid var(--border_grey);
+}
+
+.container_input_img{
+    position: relative;
+    display: inline-block;
+    width: 50%; /* oder passend anpassen */
+}
+
+.container_input_img input {
+    width: 100%;
+    padding-right: 40px; /* Platz für den Button schaffen */
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 16px;
+}
+.input_button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input_button_switch{
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    background: white; 
+    border-radius: 50%;
+    border: 1px solid var(--border_grey);
+}
+
+#container_inputs_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex: 1;
+    min-width: 400px;
+}
+
+.input_icon_switch{
+    width: 20%;
+    height: 40px;
+    font-size: 16px;
+    padding-top: 20px; 
+    box-sizing: border-box;
+}
+
+#size_kalender{
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+}
+
+#size_kalender input{
+    width: 100%;
+    padding-right: 40px; /* Platz für den Button schaffen */
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+#input_button_kalender{
+    position: absolute;
+    right: 5px;
+    top: 70%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#btn_suche{
+    color: var(--text_white);
+    background-color: var(--background_tuerkis);
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-weight: 600;
+}
+
+/* Reiseideen und Tipps */
+#container_reisewuensche{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.container_rw_design{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+}
+.container_contant p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container_contant h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container_contant{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    margin-bottom:20px;
+}
+
+.img_rw_design{
+    width: 100%;
+    height: 35vh;
+}
+
+.buchung-formular{
+    width: 100%;
+}
+
+#form_flug_hotel{
+    background-color: var(--background_white);
+    width: 80%;
+    height: auto;
+}
+
+.container_test{
+    background-color: var(--background_white);
+    width: 80%;
+    height: 200px;
+}
+
+#form_mietwagen{
+    background-color: var(--background_white);
+    width: 80%;
+    height: auto;
+}
+
+#form_hotel{
+    background-color: var(--background_white);
+    width: 80%;
+    height: auto;
+}
+

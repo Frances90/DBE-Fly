@@ -1,9 +1,12 @@
 :root{
     --text_white: #ffffff;
     --text_black: #000000;
-    --aktiv: #1ab2b1;
-    --tabs_background:#313a3be3;
+    --text_grey: #6b6760;
+    --platzhalter_text: rgb(165, 163, 157);
+    --background_tuerkis: #1ab2b1;
+    --tabs_background:#0000007c;
     --tabs_background_aktiv:#ffffff;
     --button_background: #1ab2b1;
-    --platzhalter_text: #a5a39d;
+    --background_white: #ffffff;
+    --border_grey: #e8eae7;
 }

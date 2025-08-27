@@ -27,10 +27,10 @@
                         <li class="subnav_item">
                             <button class="button_design" onclick="openBuchung('form_fluege')">
                                 <svg class="svg_design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>Flüge</title>
-                                        <path d="M20.56 3.91C21.15 4.5 21.15 5.45 20.56 6.03L16.67 9.92L18.79 19.11L17.38 20.53L13.5 13.1L9.6 17L9.96 19.47L8.89 20.53L7.13 17.35L3.94 15.58L5 14.5L7.5 14.87L11.37 11L3.94 7.09L5.36 5.68L14.55 7.8L18.44 3.91C19 3.33 20 3.33 20.56 3.91Z" />
-                                    </svg>
-                                Flüge
+                                    <title>Flüge</title>
+                                    <path d="M20.56 3.91C21.15 4.5 21.15 5.45 20.56 6.03L16.67 9.92L18.79 19.11L17.38 20.53L13.5 13.1L9.6 17L9.96 19.47L8.89 20.53L7.13 17.35L3.94 15.58L5 14.5L7.5 14.87L11.37 11L3.94 7.09L5.36 5.68L14.55 7.8L18.44 3.91C19 3.33 20 3.33 20.56 3.91Z" />
+                                </svg>
+                                <span class="navTitel">Flüge</span>
                             </button>
                         </li>
 
@@ -40,7 +40,7 @@
                                     <title>Flug &amp; Hotel</title>
                                     <path d="M9.5 18V9H8V18M12.75 18V9H11.25V18M16 18V9H14.5V18M17.03 6C18.11 6 19 6.88 19 8V19C19 20.13 18.11 21 17.03 21C17.03 21.58 16.56 22 16 22C15.5 22 15 21.58 15 21H9C9 21.58 8.5 22 8 22C7.44 22 6.97 21.58 6.97 21C5.89 21 5 20.13 5 19V8C5 6.88 5.89 6 6.97 6H9V3C9 2.42 9.46 2 10 2H14C14.54 2 15 2.42 15 3V6M10.5 3.5V6H13.5V3.5M17.03 19V8H6.97V19" />
                                 </svg>
-                                Flug &amp; Hotel
+                                <span class="navTitel">Flug &amp; Hotel</span>                              
                             </button>
                         </li>
 
@@ -50,7 +50,7 @@
                                     <title>Mietwagen</title>
                                     <path d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
                                 </svg>
-                                Mietwagen
+                                <span class="navTitel">Mietwagen</span>
                             </button>
                         </li>
 
@@ -60,7 +60,7 @@
                                     <title>Hotel</title>
                                     <path d="M19,7H11V14H3V5H1V20H3V17H21V20H23V11A4,4 0 0,0 19,7M7,13A3,3 0 0,0 10,10A3,3 0 0,0 7,7A3,3 0 0,0 4,10A3,3 0 0,0 7,13Z" />
                                 </svg>
-                                Hotel
+                                <span class="navTitel">Hotel</span>
                             </button>
                         </li>
 
@@ -156,16 +156,8 @@
         </footer>
 
         <!-- Skript zum Wechseln der einzelnen Tabs -->
-        <script>
-            function openBuchung(id) {
-                const forms = document.getElementsByClassName("buchung-formular");
-                for (let i = 0; i < forms.length; i++) {
-                    forms[i].style.display = "none";
-                }
-
-                // Gewünschtes Formular anzeigen
-                document.getElementById(id).style.display = "flex"; 
-                }
+        <script src="js/main.js">
+            
         </script>
 
     </body>

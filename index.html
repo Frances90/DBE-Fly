@@ -8,6 +8,9 @@
     </head>
 
     <body>
+        <div id="small_container">
+            Ihre Bildschirmgröße wir nicht unterstützt.
+        </div>
         <header>
             <img src="https://www.dbe.academy/resources/images/logo-green.svg" alt="Logo von der Webseite DBE Academy">
             <nav>
@@ -80,30 +83,32 @@
                                 </span>
                                 <span id="flug_nonstop">
                                     <input type="checkbox" id="nonstop" name="nonstop">
-                                    <label for="nonstop">Nur Nonstop Flüge</label>
+                                    <label id="label_nonstop" for="nonstop">
+                                        Nur Nonstop Flüge</label>
                                 </span>
                             </div>
                             <div id="form_ort_datum">
                                 <div class="input_container">
-                                        
-                                    <div id="container_inputs_icon">
+                                    <div id="container_mobil">   
+                                        <div id="container_inputs_icon">
+                                                
+                                            <div class="container_input_img">
+                                                <input class="input_icon_switch" type="text" placeholder="Von">
+                                                <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
+                                            </div>
+                                            <div class="container_input_img">
+                                                <input class="input_icon_switch" type="text" placeholder="Nach">
+                                                <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
+                                            </div>
+                                            <button class="input_button_switch"><img src="./resources/swap-horizontal.svg" id="img_swap" class="icon_size"></button>
+                                        </div>
+                                        <div class="container_input_img" id="size_kalender">
                                             
-                                        <div class="container_input_img">
-                                            <input class="input_icon_switch" type="text" placeholder="Von">
-                                            <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
+                                                <input type="input" placeholder="Abflug - Rückflug">
+                                                <button id="input_button_kalender"><img src="./resources/calendar-range.svg" id="img_blase" class="icon_size"></button>
+                                            
                                         </div>
-                                        <div class="container_input_img">
-                                            <input class="input_icon_switch" type="text" placeholder="Nach">
-                                            <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
-                                        </div>
-                                        <button class="input_button_switch"><img src="./resources/swap-horizontal.svg" id="img_swap" class="icon_size"></button>
-                                    </div>
-                                    <div class="container_input_img" id="size_kalender">
-                                        
-                                            <input type="input" placeholder="Abflug - Rückflug">
-                                            <button id="input_button_kalender"><img src="./resources/calendar-range.svg" id="img_blase" class="icon_size"></button>
-                                        
-                                    </div>
+                                    </div> 
                                     <input id="btn_suche" type="button" value="Suchen">
                                 </div>
                                 

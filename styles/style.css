@@ -42,6 +42,7 @@ nav #nav_items{
 
 /* Main css fängt hier an */
 main{
+
     width: 100%;
 }
 
@@ -410,6 +411,154 @@ input:checked + label::before {
     background-color: var(--background_white);
     width: 80%;
     height: auto;
+}
+
+/* Flugdaten Design */
+#container_flugdaten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#flugdaten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px #000000;
+    border-radius: 6px;
+    padding: 16px;
+    width: 90%;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.fluginfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+#containerInfo {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    justify-content: space-around; /* gleichmäßige Verteilung */
+    padding-right: 20px;
+    gap: 20px; /* Abstand zwischen den 3 Bereichen */
+    width: 100%;
+}
+
+.flugzeit{
+    text-align: center;
+    color: #0a1a3a;
+    font-size: 18px;
+}
+
+.flugzeit span {
+    display: block;
+    font-size: 14px;
+    color: #0a1a3a;
+}
+
+.flug_ankunft small {
+    color: #666;
+    font-size: 12px;
+}
+
+.flugdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+#design_stops{
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
+
+.flugdetails .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 8px;
+    position: relative;
+    top: -5px;
+}
+
+.flug_dauer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #444;
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+}
+
+.flug_preise {
+    display: flex;
+    border-left: 1px solid #ccc;
+}
+
+.preis_optionen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 0 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+}
+
+.preis_optionen:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.preis_optionen .preisstufe {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.preis_optionen strong {
+    display: block;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.preis_optionen span {
+    font-size: 12px;
+}
+#eco{
+    color: var(--text_eco);
+}
+
+#business{
+    color: var(--text_business);
+}
+.preis{
+    font-weight: 800;
+}
+
+.dropdown-arrow {
+    width: 30px;
+    padding-top: 15px;
 }
 
 @media (max-width: 319.9px){

@@ -93,11 +93,11 @@
                                         <div id="container_inputs_icon">
                                                 
                                             <div class="container_input_img">
-                                                <input class="input_icon_switch" type="text" placeholder="Von">
+                                                <input class="input_icon_switch" id="input_von" type="text" placeholder="Von">
                                                 <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
                                             </div>
                                             <div class="container_input_img">
-                                                <input class="input_icon_switch" type="text" placeholder="Nach">
+                                                <input class="input_icon_switch" id="input_nach" type="text" placeholder="Nach">
                                                 <button class="input_button"><img src="./resources/speech-bubble-svgrepo-com.svg" id="img_blase" class="icon_size"></button>
                                             </div>
                                             <button class="input_button_switch"><img src="./resources/swap-horizontal.svg" id="img_swap" class="icon_size"></button>
@@ -136,6 +136,58 @@
                     </div>
                     
                 </div>            
+            </div>
+            <div id="container_flugdaten">
+                <div id="flugdaten">
+                    <div class="fluginfo">
+                        <div id="containerInfo">
+                            <div class="flugzeit">
+                                <strong>10:10</strong><br>
+                                <span>HAJ</span>
+                            </div>
+                            
+                            <div class="flugdetails">
+                                <div class="line"></div>
+                                <div id="design_stops">
+                                <span>1<br>Stopp</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flug_ankunft">
+                                <strong>12:45</strong><br>
+                                <span>STR</span><br>
+                                <small>Terminal 1</small>
+                            </div>
+                        </div>
+                        <div class="flug_dauer">
+                                <img src="/resources/clock-outline.svg" alt="Uhr" class="icon" />
+                                Dauer 2h 35min
+                        </div>
+                    </div>
+
+                    <div class="flug_preise">
+                        <div class="preis_optionen" id="eco">
+                            <span class="preisstufe">Economy</span>
+                            <strong>ab 
+                                <div class="preis">191,67</div>
+                            </strong>
+                            <span>EUR</span>
+                            <div class="dropdown-arrow">
+                                <img src="/resources/chevron-down.svg" alt="" id="chevron">
+                            </div>
+                        </div>
+                        <div class="preis_optionen" id="business">
+                            <span class="preisstufe">Business</span>
+                            <strong>ab 
+                                <div class="preis">236,67</div>
+                            </strong>
+                            <span>EUR</span>
+                            <div class="dropdown-arrow">
+                                <img src="/resources/chevron-down.svg" alt="" id="chevron">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="container_reisewuensche">
                 <div class="container_rw_design">

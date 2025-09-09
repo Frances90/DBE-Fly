@@ -54,7 +54,7 @@ btbSuche.addEventListener("click", function(){
 
         if(flugStartKlein.includes(vonWert.toLowerCase()) && flugZielKlein.includes(nachWert.toLowerCase()) ){
             
-            flugListe.innerHTML += `<div id="flugdaten">
+            flugListe.innerHTML += `<div class="flugdaten">
                                     <div class="fluginfo">
                                         <div id="containerInfo">
                                             <div class="flugzeit">

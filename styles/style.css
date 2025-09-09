@@ -422,7 +422,7 @@ input:checked + label::before {
     align-items: center;
     margin-top: 20px;
 }
-#flugdaten {
+.flugdaten {
     display: flex;
     justify-content: center;
     align-items: center;
